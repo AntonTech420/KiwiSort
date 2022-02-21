@@ -1,4 +1,5 @@
 import time
+import matplotlib.pyplot as plt
 
 start = time.time()
 
@@ -43,5 +44,8 @@ selectionSort(elements, size)
 # print(elements)
 
 end = time.time()
+
+plt.plot(elements)
+plt.show()
 
 print(f"Runtime of the selectionSort is {end - start}")
